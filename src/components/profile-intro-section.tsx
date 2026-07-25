@@ -6,8 +6,7 @@ import { ArrowDown, ArrowRight } from "lucide-react";
 import { gsap } from "@/lib/gsap";
 import { SiteHeader } from "@/components/site-header";
 import { ContactFormDialog } from "@/components/contact-form-dialog";
-// import PROFILE_IMAGE from "@/assets/IMG_0081-bg-removed.webp";
-import PROFILE_IMAGE from "@/assets/IMG_7512.webp";
+import PROFILE_IMAGE from "@/assets/landing-page-headshot-pic.webp";
 
 export function ProfileIntroSection() {
   const rootRef = useRef<HTMLDivElement>(null);
@@ -190,7 +189,7 @@ export function ProfileIntroSection() {
           </div>
         </div>
 
-        <div className="relative aspect-[7/10] w-full max-w-[480px] justify-self-center self-center overflow-hidden md:aspect-auto md:h-full md:w-full md:max-w-none md:justify-self-end md:self-stretch">
+        <div className="relative aspect-[7/10] w-full max-w-[480px] justify-self-center self-center overflow-hidden md:aspect-auto md:h-full md:w-full md:max-w-[620px] md:justify-self-end md:self-stretch">
           <div className="pointer-events-none absolute inset-x-[10%] bottom-[6%] h-[16%] rounded-[50%] bg-black/20 blur-2xl dark:bg-black/60 dark:blur-3xl" />
 
           <div ref={imageWrapRef} className="absolute inset-0 overflow-hidden">
@@ -203,8 +202,8 @@ export function ProfileIntroSection() {
                 alt="Aakash Paswan standing confidently"
                 fill
                 priority
-                className="object-cover drop-shadow-[0_30px_35px_rgba(0,0,0,0.3)] dark:drop-shadow-[0_30px_45px_rgba(0,0,0,0.7)]"
-                sizes="(max-width: 768px) 90vw, 480px"
+                className="object-cover object-[center_12%] drop-shadow-[0_30px_35px_rgba(0,0,0,0.3)] dark:drop-shadow-[0_30px_45px_rgba(0,0,0,0.7)]"
+                sizes="(max-width: 768px) 90vw, 620px"
               />
             </div>
           </div>
